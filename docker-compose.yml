@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: personal-finance-tracker-sql
+    environment:
+      SA_PASSWORD: "Rlp6nu!VhgwrMaQ23rd#7682!!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1434:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+
+volumes:
+  sql_data:

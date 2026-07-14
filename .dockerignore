@@ -1,0 +1,13 @@
+.git
+.vs
+.idea
+**/bin/
+**/obj/
+**/TestResults/
+.nuget/
+*.user
+*.suo
+deploy/
+.gitlab-ci.yml
+README.md
+docker-compose.yml
